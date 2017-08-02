@@ -1,3 +1,3 @@
-Your version - 1.8
+Your version - 1.8  
 https://github.com/HisDShadow/hisdshadow.github.io/raw/master/Assembly-CSharp.dll`Assembly-CSharp.dll`Assembly-CSharp.dll`true 
 https://github.com/HisDShadow/hisdshadow.github.io/raw/master/RCassets.unity3d`RCassets.unity3d`RCassets.unity3d`false

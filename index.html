@@ -6,8 +6,8 @@
                 box-sizing: border-box;
             }
             body{
-                color:black;
-                background-color: darkseagreen;
+                color:#00ff00;
+                background-image: url(https://i.imgur.com/LpZNCaD.png);
                 font-family: sans-serif;
             }
             ul{
@@ -16,14 +16,14 @@
                 margin: 0;
             }
             li{
-                background-color:cadetblue; 
+                
                 margin-bottom: lem;
                 padding: : 1em;
             }
             h3{
                 margin-top: 0;
                 font-size: 2en;
-                color:black;
+                color:#00ff00;
             }
             p:last-child{
                 font-size: 1en;
@@ -36,181 +36,168 @@
         </style>
     </head>
     <body>
-        <ul>
-            <li class="game-update">
-                <h3>Welcome to EM! "D" means my beautiful smile! Keep it in mind!</h3>
-            </li>
-            <li class="game-update">
-                <h3>Version avaliable: 3.5</h3>
-            </li>
-            <li class="game-update">
-                <h3>Announcements!</h3>
-                <p>3.5</p>
-                <p>You can add your own custom map with your own models into game!</p>
-                1) Create folder "CustomMap" into "EM_Data", <br />
-                2) Add your *.unity3d file in there, <br />
-                3) Use this command while being MC: <br />
-                /emcustommap [file name (without .unity3d)] [Prefab name] [float X] [float Y] [float Z] 0 0 0 0 <br />
-                0 0 0 0 - is rotation. If you know how to use it, go ahead! <br />
-                Also respawn glitch was fixed...<br />
-                
-                
-                <p>3.4</p>
-                <p>New object controller! Use this before spawn objects while being builders. Buttons as in the level editor! So rebinds for level editor will be working for this too.</p>
-                New "html" tag handler;<br />
-                Sound of your death D.<br />
-                Fix respawn glitch. Now you can use specmode and you wont be spawned. Also if you are a titan you wont be spawned as a human(?). <br />
-                Max size of spawned titans is 5000 instead of 50 now. But ppl without some modification can see only 50 size max (?). I guess. <br />
-                Lots of optimizations for anticrash. If you got any crashes, send me output_log.txt from a special folder that have been created after the game have crashed! <br />
-                
-                <p>3.0.3 - some fixes; + /despawn command. Stay near the block and type /despawn; Also punk rocks will destroy spawned blocks;</p>
-                <p>Beast was rebalanced again! Need some practice D.</p>
-                
-                <p>3.0.1 - some fixes;</p>
-                
-                <p>3.0 - sounds from everyone! new sounds - audio_gas_from_others, audio_player_footsteps;</p>
-                <p>Beast and speedies rebalance! Now you will be able to kill beasts and speedies wont spam you by jumping!</p>
-                <p>But this is still pretty powerfull titans!</p>
-                <p>Left top panel will show you your state, time, alive/dead ppl, spectated id, fps and ping;</p>
-                <p>New role - builder! /spawn [object name], for instance - "cuboid", "plane", "sphere", "cylinder",</p>
-                <p>"capsule", "pyramid", "prism", "arc90", "arc180", "torus", "tube"</p>
-                
-                <p>2.8.5, 2.8.9, 2.9 - sounds;</p>
-                
-                <p>2.8.5</p>
-                
-                <p>You can set custom sounds for hooks and flares shooting!</p>
-                <p>For that create a "Sounds" folder into EM_Data folder and put appropriate sounds with names "audio_rope.wav" and "flareshoot.wav" there.</p>
-                <p>Clock was added ^^.</p>
-                <p>Fix single game.</p>
-                <p>Fix /sptit skins(?needs to test)</p>
-                <p>hud command will hide kill info status either.</p>
-                <p>Your kd wont be changed by killers with specific name.</p>
-                <p>Speedy titans were added!</p>
-                <p>So use the old field to set a percent of Speedy among all titans after restart.</p>
-                
-                <p>2.8</p>
-                
-                <p>You can set percent of punks that can throw rocks; Enter the percent and press randomRockThr</p>
-                <p>You can set crawler-trap now! Enter min time and max time and press randomTrap.</p>
-                <p>Script will calculate random value from your min and max and wait that time before switching random titan to crawler;</p>
-                <p>Also you can give players a permission to revive themself;</p>
-                <p>Ability to tp Annie to your entered coordinates;</p>
-                <p>You can pause titans, Annie and colossal;</p>
-                
-                <p>2.7.1</p> 
-                  
-                <p>New gamemode is avaliable!  
-                <p>That is hook DM, it means that you will kill player if you will hook him.</p>
-                <p>Enable/disable in MC menu;</p>
-                
-                <p>Also:</P>
-                <p>You can enable/disable rock throwing during the game;</p>  
-                
-                
-                <p>2.7</p>  
-                  
-            <p>More abusive mods in ckick and ckill;</p>  
-            <p>More stable playerList;</p>  
-            <p>Change message of autopilot switching;</p>  
-                <p>Ability to delete any html tags from chat, so you can see who was a reason for chat crash;</p>  
-            <p>Cut the backround while level is loading;</p>  
-            <p>And one very important part to improve our teamwork =P;</p>  
-                
-            <p>2.6.1</p>
-                
-            <p>fix.</p>
-                
-            <p>2.6.0</p>
-                
-            <p>Fix reviving after DC if MC is dead.</p>
-            <p>Wagoner rebalance.</p>
-            <p>Ability to change name and guildname while playing.</p>
-            <p>Fix horse`s partners bug.</p>
-            <p>Attempt to make it works for mac users.</p>
-                
-            <p>You can: 1)revive yourself after DC if one player is alive at least.</p>
-            <p>2)Hide playerList`s elements;</p>
-            <p>3)Disable damage by cannon for your titans as MC;</p>
-            <p>4)Tie your horse;</p>
-            <p>5)/dance [1-7] [float time]</p>
-            <p>6)Hide your name while playing;</p>
-            <p>7)Change your squad while playing;</p>
-            <p>8)and the most important part:</p>
-            <p>you can send message over head like MMORPG!</p>
-            <p>Type /o [message]</p>
-                
-                <p>Auto-pilot for PT is avaliable! Press 7 to use flash flare.</p>
-                <P>If u have a bug, press EM -> deleteME.</p>
-                <p>Now PTs are more balanced: cant execute jump-spam but have new ability - grab without eating!</p>
-                <p>Fix teleport function.</p>
-                <p>ServerList sorting was added.</p>
-                <p>New player list is avaliable! Now you can see lots of characters! But you should know that it is better you will use usual character by yourself!</p>
-                <p>AHSS label will be disabled while name hiding.</p>
-                <p>if you have any bug with new playerlist, go to Log -> press "sw" -> make screenshot -> send me</p>
-                <p>Look at Info - Help 4 -> how to use spawners and ability to change PT level.</p>
-                <p>You can kill Universe users and some other abusive mod users. Firstly u have to check player. If player has <Abuser> tag you can kill him.</p>
-                <p>You can type /camerad [dist] - to set your camera distance.</p>
-                <p>Saved ur hidden name? Press "Load" to load ur last hidden name and squad! No needs to press "Save" again.</p>
-                
-                <p>
-                </p>
-                
-                <p>How to use titan spawners: (examples)</p>
-                <p>/sptit 4 8 10 200 3 99999 0 0 0 0 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png</p>
-                <p>or just /sptit 4 8 10 200 3 99999 0 0 0 0 1</p> 
-                <p>with default skin;</p>
-                <p>
-                </p>
-                
-                <p>/customspawner (example for City, also you can without skin links)</p>
-                <p>10 5 0 3 4 8 10 200 99999 0 256 0 3 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png;</p>
-                <p>10 5 0 3 4 8 10 200 99999 0 -243 0 -27 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png</p>
-                <p>
-                </p>
-                
-                <p>Do you know that you can open your minimap and then you can control this with mouse wheel and arrows?</p>
-                <p>now /noflare doesnt block standart flares from MC.</p>
-                <p>"M" means my attempts to fix the problem for mac users-_-</p>
-                <p>Autopilot was added! Type /autopilot and press "G" while riding on your horse!</p>
-                <p>You can spawn Annie (Alpha test)(MC only) with /annie. (Like this: /annie x y z 2000(health) 30(size)</p>
-                <p> 100(speed) 90(chase dist) 10(attention) 0(attack wait) 30(attack dist))</p>
-                <p>
-                </p>
-                <p>Mac users! Wait ~20sec to loading! (Test function! Report me if it was not useful for you.)</p>
-                <p>fix /al cam bug</p>
-                <p>Type /mp # - to teleport your minimap to #.</p>
-                <p>Type /tpmp x z - to teleport your minimap to x z (y=const).</p>
-                <p>Type /smp num - scale hmm.</p>
-                <p>Type /rsingle to launch both rope in one direction.</p>
-                <p>Type /cboxh [num] to change chatbox size!</p>
-                <p>Type /getonh to get on your horse. (distance have to be < 15)</p>
-                <p>Type /cbox will be saved now! </p>
-                <p>Also fix hero slow mo (hmm, it wasnt a bug...)</p>
-                <p>+ some debug information</p>
-            </li>
-            <li class="game-update">
-                <h3>Stuff: </h3>
-                <p>Some commands:</p>
-                <img src="http://i.imgur.com/iYXZoMW.png" alt="some features">
-            </li>
-            <li>
-                <p> Use this skybox skin for the white fog: http://i.imgur.com/1Ns9MEE.png</p>
-                <img src="http://i.imgur.com/1Ns9MEE.png" heigh="50" alt="White fog skin">
-            </li>
-            <li>
-                <p> Use this skybox skin for the cyan fog: http://i.imgur.com/PA6W8NY.jpg</p>
-                <img src="http://i.imgur.com/PA6W8NY.jpg" heigh="50" alt="Cyan fog skin">
-            </li>
-            <li>
-                <p> Use this skybox skin for underwater gamemodes (/setgravity 0 9): http://i.imgur.com/EPceEEO.jpg</p>
-                <img src="http://i.imgur.com/EPceEEO.jpg" heigh="50" width="70" alt="Underwater skin">
-            </li>
-            <li>
-                <p> You can get something like this: (/setlightcolor 2)</p>
-                <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182754950119425/underwater3.png" alt="Underwater">
-                <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182774566879232/underwater2.png" alt="Cyan">
-            </li>
-        </ul>
+        
+            
+                <h2 class="game-update">Welcome to EM! "D" means my beautiful smile! Keep it in mind!</h2>
+            
+                <h2 class="game-update">Version avaliable: 3.5</h2>
+            
+                <div class="game-update">
+                    <h3><b>Announcements!</b></h3>
+                    <b>v3.5</b> <br />
+                    You can add your own custom map with your own models into game!<br />
+                    1) Create folder "CustomMap" into "EM_Data", <br />
+                    2) Add your *.unity3d file in there, <br />
+                    3) Use this command while being MC: <br />
+                    /emcustommap [file name (without .unity3d)] [Prefab name] [float X] [float Y] [float Z] 0 0 0 0 <br />
+                    0 0 0 0 - is rotation. If you know how to use it, go ahead! <br />
+                    Also respawn glitch was fixed...<br /> <br />
+                </div> 
+
+                    <b>v3.4</b> <br />
+                    New object controller! Use this before spawn objects while being builders. Buttons as in the level editor! So rebinds for level editor will be working for this too.<br />
+                    New "html" tag handler;<br />
+                    Sound of your death D.<br />
+                    Fix respawn glitch. Now you can use specmode and you wont be spawned. Also if you are a titan you wont be spawned as a human(?). <br />
+                    Max size of spawned titans is 5000 instead of 50 now. But ppl without some modification can see only 50 size max (?). I guess. <br />
+                    Lots of optimizations for anticrash. If you got any crashes, send me output_log.txt from a special folder that have been created after the game have crashed! <br /> <br />
+
+                    <b>v3.0.3</b> <br />
+                    some fixes; + /despawn command. Stay near the block and type /despawn; Also punk rocks will destroy spawned blocks; <br />
+                    Beast was rebalanced again! Need some practice D. <br /> <br />
+
+                    <b>v3.0.1</b><br />
+                    some fixes;<br /> <br />
+
+                    <b>v3.0</b> <br />
+                    sounds from everyone! new sounds - audio_gas_from_others, audio_player_footsteps; <br />
+                    Beast and speedies rebalance! Now you will be able to kill beasts and speedies wont spam you by jumping! <br />
+                    But this is still pretty powerfull titans! <br />
+                    Left top panel will show you your state, time, alive/dead ppl, spectated id, fps and ping; <br />
+                    New role - builder! /spawn [object name], for instance - "cuboid", "plane", "sphere", "cylinder", <br />
+                    "capsule", "pyramid", "prism", "arc90", "arc180", "torus", "tube" <br /> <br />
+
+                    <b>v2.8.5, 2.8.9, 2.9</b> <br />
+                    sounds; <br /> <br />
+
+                    <b>v2.8.5</b> <br />
+                    You can set custom sounds for hooks and flares shooting! <br />
+                    For that create a "Sounds" folder into EM_Data folder and put appropriate sounds with names "audio_rope.wav" and "flareshoot.wav" there. <br />
+                    Clock was added ^^. <br />
+                    Fix single game. <br />
+                    Fix /sptit skins(?needs to test) <br />
+                    hud command will hide kill info status either. <br />
+                    Your kd wont be changed by killers with specific name. <br />
+                    Speedy titans were added! <br />
+                    So use the old field to set a percent of Speedy among all titans after restart. <br /> <br />
+
+                    <b>2.8</b> <br />
+                    You can set percent of punks that can throw rocks; Enter the percent and press randomRockThr <br />
+                    You can set crawler-trap now! Enter min time and max time and press randomTrap. <br />
+                    Script will calculate random value from your min and max and wait that time before switching random titan to crawler; <br />
+                    Also you can give players a permission to revive themself; <br />
+                    Ability to tp Annie to your entered coordinates; <br />
+                    You can pause titans, Annie and colossal; <br /> <br />
+
+                    <b>2.7.1</b> <br />
+                    New gamemode is avaliable!   <br />
+                    That is hook DM, it means that you will kill player if you will hook him. <br />
+                    Enable/disable in MC menu; <br />
+                    Also: <br />
+                    You can enable/disable rock throwing during the game;  <br /> <br />
+
+                    <b>2.7</b>  <br /> 
+                    More abusive mods in ckick and ckill;  <br />
+                    More stable playerList;  <br />
+                    Change message of autopilot switching; <br />
+                    Ability to delete any html tags from chat, so you can see who was a reason for chat crash; <br />
+                    Cut the backround while level is loading; <br />
+                    And one very important part to improve our teamwork =P; <br /> <br />
+
+                    <b>2.6.1</b> <br />
+                    fix. <br /> <br />
+
+                    <b>2.6.0</b> <br />
+                    Fix reviving after DC if MC is dead. <br />
+                    Wagoner rebalance. <br />
+                    Ability to change name and guildname while playing. <br />
+                    Fix horse`s partners bug. <br /> <br />
+                    
+                    You can: 1)revive yourself after DC if one player is alive at least. <br />
+                    2)Hide playerList`s elements; <br />
+                    3)Disable damage by cannon for your titans as MC; <br />
+                    4)Tie your horse; <br />
+                    5)/dance [1-7] [float time] <br />
+                    6)Hide your name while playing; <br />
+                    7)Change your squad while playing; <br />
+                    8)and the most important part: <br />
+                    you can send message over head like MMORPG! <br />
+                    Type /o [message] <br /> <br />
+
+                    Auto-pilot for PT is avaliable! Press 7 to use flash flare. <br />
+                    If u have a bug, press EM -> deleteME. <br />
+                    Now PTs are more balanced: cant execute jump-spam but have new ability - grab without eating! <br />
+                    Fix teleport function. <br />
+                    ServerList sorting was added. <br />
+                    New player list is avaliable! Now you can see lots of characters! But you should know that it is better you will use usual character by yourself! <br />
+                    AHSS label will be disabled while name hiding. <br />
+                    if you have any bug with new playerlist, go to Log -> press "sw" -> make screenshot -> send me <br />
+                    Look at Info - Help 4 -> how to use spawners and ability to change PT level. <br />
+                    You can kill Universe users and some other abusive mod users. Firstly u have to check player. If player has [Abuser] tag you can kill him. <br />
+                    You can type /camerad [dist] - to set your camera distance. <br />
+                    Saved ur hidden name? Press "Load" to load ur last hidden name and squad! No needs to press "Save" again. <br /> <br />
+
+                    How to use titan spawners: (examples) <br />
+                    /sptit 4 8 10 200 3 99999 0 0 0 0 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png <br />
+                    or just /sptit 4 8 10 200 3 99999 0 0 0 0 1 <br />
+                    with default skin; <br /> <br />
+
+                    /customspawner (example for City, also you can without skin links) <br />
+                    10 5 0 3 4 8 10 200 99999 0 256 0 3 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png; <br />
+                    10 5 0 3 4 8 10 200 99999 0 -243 0 -27 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png <br /> <br />
+
+                    Do you know that you can open your minimap and then you can control this with mouse wheel and arrows? <br />
+                    now /noflare doesnt block standart flares from MC. <br />
+                    "M" means my attempts to fix the problem for mac users-_- <br />
+                    Autopilot was added! Type /autopilot and press "G" while riding on your horse! <br />
+                    You can spawn Annie (Alpha test)(MC only) with /annie. (Like this: /annie x y z 2000(health) 30(size) <br />
+                     100(speed) 90(chase dist) 10(attention) 0(attack wait) 30(attack dist)) <br /> <br />
+
+                    <div>
+                    fix /al cam bug <br />
+                    Type /mp # - to teleport your minimap to #. <br />
+                    Type /tpmp x z - to teleport your minimap to x z (y=const). <br />
+                    Type /smp num - scale hmm. <br />
+                    Type /rsingle to launch both rope in one direction. <br />
+                    Type /cboxh [num] to change chatbox size! <br />
+                    Type /getonh to get on your horse. <br />
+                    Type /cbox will be saved now!  <br />
+                    Also fix hero slow mo (hmm, it wasnt a bug...) + some debug information <br /> <br />
+                    </div>                                                             
+                                                                            
+                    <ul>    
+                        <li class="game-update">
+                            <h3><b>Stuff:</b> </h3>
+                            <p>Some commands:</p>
+                            <img src="http://i.imgur.com/iYXZoMW.png" alt="some features">
+                        </li>
+                        <li>
+                            <p> Use this skybox skin for the white fog: http://i.imgur.com/1Ns9MEE.png</p>
+                            <img src="http://i.imgur.com/1Ns9MEE.png" heigh="50" alt="White fog skin">
+                        </li>
+                        <li>
+                            <p> Use this skybox skin for the cyan fog: http://i.imgur.com/PA6W8NY.jpg</p>
+                            <img src="http://i.imgur.com/PA6W8NY.jpg" heigh="50" alt="Cyan fog skin">
+                        </li>
+                        <li>
+                            <p> Use this skybox skin for underwater gamemodes (/setgravity 0 9): http://i.imgur.com/EPceEEO.jpg</p>
+                            <img src="http://i.imgur.com/EPceEEO.jpg" heigh="50" width="70" alt="Underwater skin">
+                        </li>
+                        <li>
+                            <p> You can get something like this: (/setlightcolor 2)</p>
+                            <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182754950119425/underwater3.png" alt="Underwater"> <br />
+                            <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182774566879232/underwater2.png" alt="Cyan">
+                        </li>
+                    </ul>
     </body>
 </html>

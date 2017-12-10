@@ -153,19 +153,27 @@
 
 
 <script>
-  var config = {
-    apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
-    authDomain: "hisdshadow.firebaseapp.com",
-    databaseURL: "https://hisdshadow.firebaseio.com",
-    projectId: "hisdshadow",
-    storageBucket: "",
-    messagingSenderId: "186441374395"
-  };
-  firebase.initializeApp(config);
+  
 </script>
 
 <script>
-    var database = firebase.database();
+    
+    var database;
+    
+    $(function() {
+            var config = {
+                apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
+                authDomain: "hisdshadow.firebaseapp.com",
+                databaseURL: "https://hisdshadow.firebaseio.com",
+                projectId: "hisdshadow",
+                storageBucket: "",
+                messagingSenderId: "186441374395"
+            };
+        firebase.initializeApp(config);
+        database  = firebase.database();
+    });
+    
+    
     
     function LoadAbout(){
         Load('About');

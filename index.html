@@ -1,263 +1,213 @@
-<html>
-    <head>
-        <title>The Expedition Mod Updates (Alpha page D)</title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            body{
-                color:#00ff00;
-                background-image: url(https://i.imgur.com/LpZNCaD.png), url(https://i.imgur.com/YCzoWID.png);
-                background-repeat: no-repeat, no-repeat;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-default {
+            background-color: #004d00;
+            border-color: #27ae60;
+        }
+        .navbar-default .navbar-brand {
+            color: #00ff00;
+        }
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #d1ffed;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #00ff00;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #d1ffed;
+        }
+        .navbar-default .navbar-nav > .active > a, 
+        .navbar-default .navbar-nav > .active > a:hover, 
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #d1ffed;
+            background-color: #27ae60;
+        }
+        .navbar-default .navbar-nav > .open > a, 
+        .navbar-default .navbar-nav > .open > a:hover, 
+        .navbar-default .navbar-nav > .open > a:focus {
+            color: #d1ffed;
+            background-color: #27ae60;
+        }
+        .navbar-default .navbar-nav > .dropdown > a .caret {
+            border-top-color: #00ff00;
+            border-bottom-color: #00ff00;
+        }
+        .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+        .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+            border-top-color: #00ff00;
+            border-bottom-color: #00ff00;
+        }
+        .navbar-default .navbar-nav > .open > a .caret, 
+        .navbar-default .navbar-nav > .open > a:hover .caret, 
+        .navbar-default .navbar-nav > .open > a:focus .caret {
+            border-top-color: #00ff00;
+            border-bottom-color: #00ff00;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: #00ff00;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #27ae60;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #00ff00;
+        }
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+                color: #00ff00;
+          }
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                color: #00ff00;
                 background-color: #004d00;
-                font-family: sans-serif;
             }
-            ul{
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-            li{
-                
-                margin-bottom: lem;
-                padding: : 1em;
-            }
-            h3{
-                margin-top: 0;
-                font-size: 2en;
-                color:#00ff00;
-            }
-            p:last-child{
-                font-size: 1en;
-                color:black;
-            }
-            img{
-                width: 100%;
-                max-width: 600px;
-            }
-            h2 {
-              margin: 0;
-              padding: 20px 0;  
-              color: #66ff00;
-              text-shadow: 3px 3px 1px #005c00;
-            }
-        </style>
-    </head>
-    <body>
+        }
+
+        .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #27ae60;
+        }
+
+        body {
+        padding-top:60px;
+        background-color:#004d00;
+        }
+
+        .article {
+        background:#004d00;
+        background-image: url(https://i.imgur.com/LpZNCaD.png);
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        }
+
+        footer {
+        background:#004d00;
+        line-height: 30px;
+        padding: 0 15px 0 15px;
+        }
         
-            
-            <h2 class="game-update">Welcome to EM! "D" means my beautiful smile! Keep it in mind! My discord - Tic#7985</h2>
+        .col-md-8{
+            color:#00ff00;
+        }
+    
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" onclick="LoadMain()">The Expedition Mod</a>
+      <a class="navbar-brand" id="ModVersionInfo">Version avalible: 3.5.3.5</a>
+    </div>
+      
+    
 
-            <h2 class="game-update">Version avaliable: 3.5.3.5</h2>
-
-            <div class="game-update">
-                <h3><b>Announcements!</b></h3>
-            </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      
+      <ul class="nav navbar-nav">
         
-                <b>v3.5.3.5</b> <br />
-                Maybe it is the final step to make this avaliable for Mac users.  <br />
-                You have to use Wine. <br />
-                Create "Fonts" folder into "EM_Data" folder. <br />
-                Download Fonts.unity3d and past into "Fonts" folder. <br />
-                <br />
-                
-                <b>v3.5.3.3</b> <br />
-                "Downloading custom assets" problem was finally fixed! Greatings! <br />
-                <br />
-                
-                <b>v3.5.3.1</b> <br />
-                Fix... <br />
-                <br />
-                
-                <b>v3.5.3</b> <br />
-                create folder "Skins" into "EM_Data"
-                put here your skin files with following format "skin_em_hero3_[your name here].txt <br />
-                /skins - all skin set files with indexes <br />
-                /skin # - set Human set 3 as written in file with number # <br />
-                text file with your skin should contains every link like: <br /> <br />
-                
-                Horse <br />
-                Hair <br />
-                Eyes <br />
-                Glass <br />
-                Face <br />
-                Skin <br />
-                Costume <br />
-                Logo Cape   <br />
-                3DMG Center  3DMG/Blade/Gun(left) <br />
-                3DMG/Blade/Gun(right) <br />
-                Gas <br />
-                Hoodie <br />
-                Weapon Trail <br /> <br />
-                
-                if you dont have some links, replace to empty lines, else replace appropriate line to appropriate link; <br />
-                
-                <br />
-                
-                <b>v3.5.1</b> <br />
-                Fix... <br />
-                some ppl was nt be able to load custom map for some reason... so technology of loading was changed, i guess. Now should works. I suppose. <br /> <br />
+        <li>
+          <a href="#" onclick="LoadChangeLog()">Change log</a>
+        </li>
+        <li><a href="#" onclick="LoadFAQ()">FAQ</a></li>
+        <li><a href="#" onclick="LoadCommandList()">Command list</a></li>
+        <li><a href="#" onclick="LoadInstructions()">Instructions</a></li>
+        <li><a href="#" onclick="LoadCreative()">Creative</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="LoadAbout()">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                <b>v3.5</b> <br />
-                You can add your own custom map with your own models into game!<br />
-                1) Create folder "CustomMap" into "EM_Data", <br />
-                2) Add your *.unity3d file in there, <br />
-                3) Use this command while being MC: <br />
-                /emcustommap [file name (without .unity3d)] [Prefab name] [float X] [float Y] [float Z] 0 0 0 0 <br />
-                0 0 0 0 - is rotation. If you know how to use it, go ahead! <br />
-                Also suicide glitch was fixed...<br /> <br />
-             
 
-                <b>v3.4</b> <br />
-                New object controller! Use this before spawn objects while being builders. Buttons as in the level editor! So rebinds for level editor will be working for this too.<br />
-                New "html" tag handler;<br />
-                Sound of your death D.<br />
-                Fix respawn glitch. Now you can use specmode and you wont be spawned. Also if you are a titan you wont be spawned as a human(?). <br />
-                Max size of spawned titans is 5000 instead of 50 now. But ppl without some modification can see only 50 size max (?). I guess. <br />
-                Lots of optimizations for anticrash. If you got any crashes, send me output_log.txt from a special folder that have been created after the game have crashed! <br /> <br />
 
-                <b>v3.0.3</b> <br />
-                some fixes; + /despawn command. Stay near the block and type /despawn; Also punk rocks will destroy spawned blocks; <br />
-                Beast was rebalanced again! Need some practice D. <br /> <br />
+<div class="article container" id="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="h2 page-header">Welcome to EM!</h1>
+        <p> "D" means my beautiful smile! Keep in mind! </p>
+     </div>
+</div>
+</div>
 
-                <b>v3.0.1</b><br />
-                some fixes;<br /> <br />
 
-                <b>v3.0</b> <br />
-                sounds from everyone! new sounds - audio_gas_from_others, audio_player_footsteps; <br />
-                Beast and speedies rebalance! Now you will be able to kill beasts and speedies wont spam you by jumping! <br />
-                But this is still pretty powerfull titans! <br />
-                Left top panel will show you your state, time, alive/dead ppl, spectated id, fps and ping; <br />
-                New role - builder! /spawn [object name], for instance - "cuboid", "plane", "sphere", "cylinder", <br />
-                "capsule", "pyramid", "prism", "arc90", "arc180", "torus", "tube" <br /> <br />
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
+    authDomain: "hisdshadow.firebaseapp.com",
+    databaseURL: "https://hisdshadow.firebaseio.com",
+    projectId: "hisdshadow",
+    storageBucket: "",
+    messagingSenderId: "186441374395"
+  };
+  firebase.initializeApp(config);
+</script>
 
-                <b>v2.8.5, 2.8.9, 2.9</b> <br />
-                sounds; <br /> <br />
-
-                <b>v2.8.5</b> <br />
-                You can set custom sounds for hooks and flares shooting! <br />
-                For that create a "Sounds" folder into EM_Data folder and put appropriate sounds with names "audio_rope.wav" and "flareshoot.wav" there. <br />
-                Clock was added ^^. <br />
-                Fix single game. <br />
-                Fix /sptit skins(?needs to test) <br />
-                hud command will hide kill info status either. <br />
-                Your kd wont be changed by killers with specific name. <br />
-                Speedy titans were added! <br />
-                So use the old field to set a percent of Speedy among all titans after restart. <br /> <br />
-
-                <b>2.8</b> <br />
-                You can set percent of punks that can throw rocks; Enter the percent and press randomRockThr <br />
-                You can set crawler-trap now! Enter min time and max time and press randomTrap. <br />
-                Script will calculate random value from your min and max and wait that time before switching random titan to crawler; <br />
-                Also you can give players a permission to revive themself; <br />
-                Ability to tp Annie to your entered coordinates; <br />
-                You can pause titans, Annie and colossal; <br /> <br />
-
-                <b>2.7.1</b> <br />
-                New gamemode is avaliable!   <br />
-                That is hook DM, it means that you will kill player if you will hook him. <br />
-                Enable/disable in MC menu; <br />
-                Also: <br />
-                You can enable/disable rock throwing during the game;  <br /> <br />
-
-                <b>2.7</b>  <br /> 
-                More abusive mods in ckick and ckill;  <br />
-                More stable playerList;  <br />
-                Change message of autopilot switching; <br />
-                Ability to delete any html tags from chat, so you can see who was a reason for chat crash; <br />
-                Cut the backround while level is loading; <br />
-                And one very important part to improve our teamwork =P; <br /> <br />
-
-                <b>2.6.1</b> <br />
-                fix. <br /> <br />
-
-                <b>2.6.0</b> <br />
-                Fix reviving after DC if MC is dead. <br />
-                Wagoner rebalance. <br />
-                Ability to change name and guildname while playing. <br />
-                Fix horse`s partners bug. <br /> <br />
-
-                You can: 1)revive yourself after DC if one player is alive at least. <br />
-                2)Hide playerList`s elements; <br />
-                3)Disable damage by cannon for your titans as MC; <br />
-                4)Tie your horse; <br />
-                5)/dance [1-7] [float time] <br />
-                6)Hide your name while playing; <br />
-                7)Change your squad while playing; <br />
-                8)and the most important part: <br />
-                you can send message over head like MMORPG! <br />
-                Type /o [message] <br /> <br />
-
-                Auto-pilot for PT is avaliable! Press 7 to use flash flare. <br />
-                If u have a bug, press EM -> deleteME. <br />
-                Now PTs are more balanced: cant execute jump-spam but have new ability - grab without eating! <br />
-                Fix teleport function. <br />
-                ServerList sorting was added. <br />
-                New player list is avaliable! Now you can see lots of characters! But you should know that it is better you will use usual character by yourself! <br />
-                AHSS label will be disabled while name hiding. <br />
-                if you have any bug with new playerlist, go to Log -> press "sw" -> make screenshot -> send me <br />
-                Look at Info - Help 4 -> how to use spawners and ability to change PT level. <br />
-                You can kill Universe users and some other abusive mod users. Firstly u have to check player. If player has [Abuser] tag you can kill him. <br />
-                You can type /camerad [dist] - to set your camera distance. <br />
-                Saved ur hidden name? Press "Load" to load ur last hidden name and squad! No needs to press "Save" again. <br /> <br />
-
-                How to use titan spawners: (examples) <br />
-                /sptit 4 8 10 200 3 99999 0 0 0 0 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png <br />
-                or just /sptit 4 8 10 200 3 99999 0 0 0 0 1 <br />
-                with default skin; <br /> <br />
-
-                /customspawner (example for City, also you can without skin links) <br />
-                10 5 0 3 4 8 10 200 99999 0 256 0 3 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png; <br />
-                10 5 0 3 4 8 10 200 99999 0 -243 0 -27 1 http://i.imgur.com/qwt8842.png http://i.imgur.com/qwt8842.png <br /> <br />
-
-                Do you know that you can open your minimap and then you can control this with mouse wheel and arrows? <br />
-                now /noflare doesnt block standart flares from MC. <br />
-                "M" means my attempts to fix the problem for mac users-_- <br />
-                Autopilot was added! Type /autopilot and press "G" while riding on your horse! <br />
-                You can spawn Annie (Alpha test)(MC only) with /annie. (Like this: /annie x y z 2000(health) 30(size) <br />
-                 100(speed) 90(chase dist) 10(attention) 0(attack wait) 30(attack dist)) <br /> <br />
-
-                <div>
-                fix /al cam bug <br />
-                Type /mp # - to teleport your minimap to #. <br />
-                Type /tpmp x z - to teleport your minimap to x z (y=const). <br />
-                Type /smp num - scale hmm. <br />
-                Type /rsingle to launch both rope in one direction. <br />
-                Type /cboxh [num] to change chatbox size! <br />
-                Type /getonh to get on your horse. <br />
-                Type /cbox will be saved now!  <br />
-                Also fix hero slow mo (hmm, it wasnt a bug...) + some debug information <br /> <br />
-                </div>   
-        
-                <div id="here"></div>
-
-                <ul>    
-                    <li class="game-update">
-                        <h3><b>Stuff:</b> </h3>
-                        <p>Some commands:</p>
-                        <img src="http://i.imgur.com/iYXZoMW.png" alt="some features">
-                    </li>
-                    <li>
-                        <p> Use this skybox skin for the white fog: http://i.imgur.com/1Ns9MEE.png</p>
-                        <img src="http://i.imgur.com/1Ns9MEE.png" heigh="50" alt="White fog skin">
-                    </li>
-                    <li>
-                        <p> Use this skybox skin for the cyan fog: http://i.imgur.com/PA6W8NY.jpg</p>
-                        <img src="http://i.imgur.com/PA6W8NY.jpg" heigh="50" alt="Cyan fog skin">
-                    </li>
-                    <li>
-                        <p> Use this skybox skin for underwater gamemodes (/setgravity 0 9): http://i.imgur.com/EPceEEO.jpg</p>
-                        <img src="http://i.imgur.com/EPceEEO.jpg" heigh="50" width="70" alt="Underwater skin">
-                    </li>
-                    <li>
-                        <p> You can get something like this: (/setlightcolor 2)</p>
-                        <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182754950119425/underwater3.png" alt="Underwater"> <br />
-                        <img src="https://cdn.discordapp.com/attachments/337608574509383680/340182774566879232/underwater2.png" alt="Cyan">
-                    </li>
-                </ul>
-        <script type = "text/javascript">
-            document.getElementById("here").innerHTML = "Begins here<br />"
-            document.getElementById("here").innerHTML = "Begins here2<br />"
-        </script>
-    </body>
+<script>
+    var database = firebase.database();
+    
+    function LoadAbout(){
+        Load('About');
+    }
+    function LoadMain(){
+        Load('Main');
+    }
+    function LoadCreative(){
+        Load('Creative');
+    }
+    
+    function LoadCommandList(){
+        Load('Command list');
+    }
+    function LoadFAQ(){
+        Load('FAQ');
+    }
+    function LoadInstructions(){
+        Load('Instructions');
+    }
+    function Load(path){
+        var ref = firebase.database().ref(path);
+        ref.once("value")
+            .then(function(snapshot){
+            var str = snapshot.child("text").val();
+            document.getElementById('container').innerHTML = str;
+        });
+    }
+    function LoadChangeLog(){
+        var ref = firebase.database().ref('Change log').orderByChild('version');
+        ref.once('value', function(snapshot){
+          document.getElementById('container').innerHTML = '';
+          snapshot.forEach(function(childSnapshot){
+              var comment = childSnapshot.child('comment').val();
+              var version = childSnapshot.child('version').val();
+              
+              document.getElementById('container').innerHTML = '<div class="row"><div class = "col-md-8"><b>' + version + '</b>' + '<br />' + comment + '<br /><br /></div></div>' + document.getElementById('container').innerHTML;;
+          });  
+        });
+    }
+    
+</script>
+    
+</body>
 </html>

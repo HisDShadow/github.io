@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Exp</title>      
+  <title>Exp</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
-  
+
+
 
     <style>
         .navbar-default {
@@ -28,14 +28,14 @@
         .navbar-default .navbar-nav > li > a:focus {
             color: #d1ffed;
         }
-        .navbar-default .navbar-nav > .active > a, 
-        .navbar-default .navbar-nav > .active > a:hover, 
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
         .navbar-default .navbar-nav > .active > a:focus {
             color: #d1ffed;
             background-color: #27ae60;
         }
-        .navbar-default .navbar-nav > .open > a, 
-        .navbar-default .navbar-nav > .open > a:hover, 
+        .navbar-default .navbar-nav > .open > a,
+        .navbar-default .navbar-nav > .open > a:hover,
         .navbar-default .navbar-nav > .open > a:focus {
             color: #d1ffed;
             background-color: #27ae60;
@@ -49,8 +49,8 @@
             border-top-color: #00ff00;
             border-bottom-color: #00ff00;
         }
-        .navbar-default .navbar-nav > .open > a .caret, 
-        .navbar-default .navbar-nav > .open > a:hover .caret, 
+        .navbar-default .navbar-nav > .open > a .caret,
+        .navbar-default .navbar-nav > .open > a:hover .caret,
         .navbar-default .navbar-nav > .open > a:focus .caret {
             border-top-color: #00ff00;
             border-bottom-color: #00ff00;
@@ -98,11 +98,11 @@
         line-height: 30px;
         padding: 0 15px 0 15px;
         }
-        
+
         .col-md-8{
             color:#00ff00;
         }
-    
+
     </style>
 </head>
 <body>
@@ -118,13 +118,13 @@
       <a class="navbar-brand" href="#" onclick="LoadMain()">The Expedition Mod</a>
       <a class="navbar-brand" id="ModVersionInfo">Version avalible: 3.5.3.5</a>
     </div>
-      
-    
+
+
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
-      
+
       <ul class="nav navbar-nav">
-        
+
         <li>
           <a href="#" onclick="LoadChangeLog()">Change log</a>
         </li>
@@ -154,41 +154,26 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
 <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
 
 <script>
-    
-    
-            var config = {
-                apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
-                authDomain: "hisdshadow.firebaseapp.com",
-                databaseURL: "https://hisdshadow.firebaseio.com",
-                projectId: "hisdshadow",
-                storageBucket: "",
-                messagingSenderId: "186441374395"
-            };
-        firebase.initializeApp(config);
-    
-    
-    
-    function LoadAbout(){
-        Load('About');
-    }
-    function LoadMain(){
-        Load('Main');
-    }
-    function LoadCreative(){
-        Load('Creative');
-    }
-    
-    function LoadCommandList(){
-        Load('Command list');
-    }
-    
-    function LoadInstructions(){
-        Load('Instructions');
-    }
+    var config = {
+        apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
+        authDomain: "hisdshadow.firebaseapp.com",
+        databaseURL: "https://hisdshadow.firebaseio.com",
+        projectId: "hisdshadow",
+        storageBucket: "",
+        messagingSenderId: "186441374395"
+    };
+    firebase.initializeApp(config);
+
+    function LoadAbout(){Load('About');}
+    function LoadMain(){Load('Main');}
+    function LoadCreative(){Load('Creative');}
+    function LoadCommandList(){Load('Command list');}
+    function LoadInstructions(){Load('Instructions');}
+
     function Load(path){
         var ref = firebase.database().ref(path);
         ref.once("value")
@@ -204,13 +189,13 @@
           snapshot.forEach(function(childSnapshot){
               var comment = childSnapshot.child('comment').val();
               var version = childSnapshot.child('version').val();
-              
+
               document.getElementById('container').innerHTML = '<div class="row"><div class = "col-md-8"><b>' + version + '</b>' + '<br />' + comment + '<br /><br /></div></div>' + document.getElementById('container').innerHTML;;
-          });  
+          });
         });
     }
-    
+
 </script>
-    
+
 </body>
 </html>

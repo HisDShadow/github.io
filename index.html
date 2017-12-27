@@ -288,12 +288,7 @@
       function LoadCommandList(){Load('Command list');}
       function LoadInstructions(){Load('Instructions');}
       function Load(path){
-        $("#container").removeClass("hidden");
-        if(loggedIn){
-          $("#firechat-wrapper").addClass("hidden");
-        }else{
-          $("#authUI").addClass("hidden");
-        }
+        ShowHideChat();
         var ref = firebase.database().ref(path);
         ref.once("value")
             .then(function(snapshot){
@@ -301,7 +296,16 @@
             document.getElementById('container').innerHTML = str;
         });
       }
+      function ShowHideChat(){
+        $("#container").removeClass("hidden");
+        if(loggedIn){
+          $("#firechat-wrapper").addClass("hidden");
+        }else{
+          $("#authUI").addClass("hidden");
+        }
+      }
       function LoadChangeLog(){
+        ShowHideChat();
         var ref = firebase.database().ref('Change log').orderByChild('version');
         ref.once('value', function(snapshot){
           document.getElementById('container').innerHTML = '';

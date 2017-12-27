@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
     <style>
         .navbar-default {
             background-color: #004d00;
@@ -72,13 +75,16 @@
                 background-color: #004d00;
             }
         }
+
         .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: #27ae60;
         }
+
         body {
         padding-top:60px;
         background-color:#004d00;
         }
+
         .article {
         background:#004d00;
         background-image: url(https://i.imgur.com/LpZNCaD.png);
@@ -86,232 +92,110 @@
         padding-top: 20px;
         margin-bottom: 10px;
         }
+
         footer {
         background:#004d00;
         line-height: 30px;
         padding: 0 15px 0 15px;
         }
+
         .col-md-8{
             color:#00ff00;
         }
+
     </style>
-    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
-    <style>
-      #firechat-wrapper {
-        height: 475px;
-        max-width: 325px;
-        padding: 10px;
-        border: 1px solid #00ff00;
-        background-color: #0f4d00;
-        margin: 50px auto;
-        text-align: center;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        -webkit-box-shadow: 0 5px 25px #666;
-        -moz-box-shadow: 0 5px 25px #666;
-        box-shadow: 0 5px 25px #666;
-      }
-      .hidden {
-        display:none;
-      }
-      #authUI {
-        color: #00ff00;
-      }
-      #authUI button{
-        background-color: #0f4d00;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" onclick="LoadMain()">The Expedition Mod</a>
-          <a class="navbar-brand" id="ModVersionInfo">Version avalible: 3.5.3.5</a>
-          <a class="navbar-brand" href="#" onclick="LoadChat()">Chat</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#" onclick="LoadChangeLog()">Change log</a>
-            </li>
-            <li><a href="#" onclick="LoadCommandList()">Command list</a></li>
-            <li><a href="#" onclick="LoadInstructions()">Instructions</a></li>
-            <li><a href="#" onclick="LoadCreative()">Creative</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" onclick="LoadAbout()">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="article container" id="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1 class="h2 page-header">Welcome to EM!</h1>
-          <p> "D" means my beautiful smile! Keep in mind! </p>
-       </div>
-      </div>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" onclick="LoadMain()">The Expedition Mod</a>
+      <a class="navbar-brand" id="ModVersionInfo">Version avalible: 3.5.3.5</a>
     </div>
-    <div id = "authUI" class = "hidden">
-      <br /><br /><br />
-      <center><h1><b>Login to have access to chat</b></h1>
-        <br />
-        <div class = "container">
-          <input id = "txtName" type = "email" placeholder = "Name" class = "hidden">
-          <input id = "txtEmail" type = "email" placeholder = "Email">
-          <input id = "txtPassword" type = "password" placeholder = "Password">
-          <br />
-          <button id = "btnLogin" class = "btn btn-action">Log in </button>
-          <button id = "btnSignUp" class = "btn btn-secondary">Sign up </button>
-          <button id = "btnSignUp2" class = "btn btn-secondary hidden">Sign up now!</button>
-          <button id = "btnLogout" class = "btn btn-aciton hidden">Log out </button>
-        </div>
-      </center>
+
+
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+      <ul class="nav navbar-nav">
+
+        <li>
+          <a href="#" onclick="LoadChangeLog()">Change log</a>
+        </li>
+        <li><a href="#" onclick="LoadCommandList()">Command list</a></li>
+        <li><a href="#" onclick="LoadInstructions()">Instructions</a></li>
+        <li><a href="#" onclick="LoadCreative()">Creative</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="LoadAbout()">About</a></li>
+      </ul>
     </div>
-    <div id="firechat-wrapper" class = "hidden"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-      var config = {
-          apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
-          authDomain: "hisdshadow.firebaseapp.com",
-          databaseURL: "https://hisdshadow.firebaseio.com",
-          projectId: "hisdshadow",
-          storageBucket: "",
-          messagingSenderId: "186441374395"
-      };
-      firebase.initializeApp(config);
-      var chatAppConfig = {
-        apiKey: "AIzaSyC-uN_v9TMWLBCr0lVlyLsannEJXAUzdgQ",
-        authDomain: "shadowchat-c44b8.firebaseapp.com",
-        databaseURL: "https://shadowchat-c44b8.firebaseio.com",
-        projectId: "shadowchat-c44b8",
+  </div>
+</nav>
+
+
+
+<div class="article container" id="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="h2 page-header">Welcome to EM!</h1>
+        <p> "D" means my beautiful smile! Keep in mind! </p>
+     </div>
+</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+<script>
+    var config = {
+        apiKey: "AIzaSyA0G1w0ngo91j6RtYi_di6BMT53t1oGjxM",
+        authDomain: "hisdshadow.firebaseapp.com",
+        databaseURL: "https://hisdshadow.firebaseio.com",
+        projectId: "hisdshadow",
         storageBucket: "",
-        messagingSenderId: "187688743431"
-      }
-      var chatApp = firebase.initializeApp(chatAppConfig, "chatApp");
-      var chatDB = chatApp.database();
-      let myName = '';
-      let loggedIn = false;
-      const txtName = document.getElementById('txtName');
-    	const txtEmail = document.getElementById('txtEmail');
-    	const txtPassword = document.getElementById('txtPassword');
-    	const btnSignUp = document.getElementById('btnSignUp');
-      const btnSignUp2 = document.getElementById('btnSignUp2');
-    	const btnLogin = document.getElementById('btnLogin');
-      function LoadChat(){
-        $("#container").addClass('hidden');
-        if(loggedIn){
-          $("#firechat-wrapper").removeClass("hidden");
-        }else{
-          $("#authUI").removeClass("hidden");
-        }
-      }
-      function signIn(){
-        const email = txtEmail.value;
-    		const pass = txtPassword.value;
-    		const auth = chatApp.auth();
-    		const promise = auth.signInWithEmailAndPassword(email, pass);
-        promise.then(function(user){
-          myName = user.displayName;
-        }).then(function(){
-          initChat();
-        })
-    		promise.catch(e => console.log(e.message));
-      }
-      btnLogin.addEventListener('click', e => {
-    		signIn();
-    	});
-    	btnSignUp.addEventListener('click', e => {
-    		$("#btnSignUp").addClass('hidden');
-        $("#btnSignUp2").removeClass('hidden');
-        $("#txtName").removeClass('hidden');
-    	});
-      btnSignUp2.addEventListener('click', e => {
-        signInFirstTime();
-      });
-    	btnLogout.addEventListener('click', e => {
-    		chatApp.auth().signOut();
-    	});
-      function signInFirstTime(){
-        myName = txtName.value;
-        const email = txtEmail.value;
-    		const pass = txtPassword.value;
-    		const auth = chatApp.auth();
-    		const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
-        promise.then(function(){
-          const promise2 = setUserName();
-          promise2.catch(e => console.log(e.message));
-          promise2.then(function(){
-            initChat();
-          }, function(){
-            console.log('error with setPlayerName');
-          });
-        })
-      }
-      function setUserName(){
-        return new Promise((resolve, reject) => {
-          console.log(chatApp.auth().currentUser);
-          console.log('Tic');
-          chatApp.auth().currentUser.updateProfile({
-            displayName:myName
-          }).then(resolve());
-          reject();
-        });
-      }
-      function initChat(){
-        console.log('initChat');
-        console.log(chatApp.auth().currentUser);
-        console.log(chatApp.auth().currentUser.uid);
-        console.log(myName);
-        let chatRef = chatApp.database().ref("chat");
-        let chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
-        chat.setUser(chatApp.auth().currentUser.uid, myName);
-        $("#firechat-wrapper").removeClass("hidden");
-        $("#authUI").addClass("hidden");
-        loggedIn = true;
-      }
-      function LoadAbout(){Load('About');}
-      function LoadMain(){Load('Main');}
-      function LoadCreative(){Load('Creative');}
-      function LoadCommandList(){Load('Command list');}
-      function LoadInstructions(){Load('Instructions');}
-      function Load(path){
-        $("#container").removeClass("hidden");
-        if(loggedIn){
-          $("#firechat-wrapper").addClass("hidden");
-        }else{
-          $("#authUI").addClass("hidden");
-        }
+        messagingSenderId: "186441374395"
+    };
+    firebase.initializeApp(config);
+
+    function LoadAbout(){Load('About');}
+    function LoadMain(){Load('Main');}
+    function LoadCreative(){Load('Creative');}
+    function LoadCommandList(){Load('Command list');}
+    function LoadInstructions(){Load('Instructions');}
+
+    function Load(path){
         var ref = firebase.database().ref(path);
         ref.once("value")
             .then(function(snapshot){
             var str = snapshot.child("text").val();
             document.getElementById('container').innerHTML = str;
         });
-      }
-      function LoadChangeLog(){
+    }
+    function LoadChangeLog(){
         var ref = firebase.database().ref('Change log').orderByChild('version');
         ref.once('value', function(snapshot){
           document.getElementById('container').innerHTML = '';
           snapshot.forEach(function(childSnapshot){
               var comment = childSnapshot.child('comment').val();
               var version = childSnapshot.child('version').val();
+
               document.getElementById('container').innerHTML = '<div class="row"><div class = "col-md-8"><b>' + version + '</b>' + '<br />' + comment + '<br /><br /></div></div>' + document.getElementById('container').innerHTML;;
           });
         });
-      }
-    </script>
-  </body>
+    }
+
+</script>
+
+</body>
 </html>

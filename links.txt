@@ -1,6 +1,3 @@
 Your version - 3.12.5  
-
 https://github.com/HisDShadow/hisdshadow.github.io/raw/master/Assembly-CSharp.dll`Assembly-CSharp.dll`ExpeditionMod/ExpMod/EM_Data/Managed/Assembly-CSharp.dll`true
-
 https://github.com/HisDShadow/hisdshadow.github.io/raw/master/RCAssets.unity3d`RCAssets.unity3d`ExpeditionMod/ExpMod/EM_Data/RCAssets.unity3d`false
-

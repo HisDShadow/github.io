@@ -284,7 +284,7 @@
       function LoadCommandList(){Load('Command list');}
       function LoadInstructions(){Load('Instructions');}
       function Load(path){
-        ShowHideChat();
+        ShowHideChat(); 
         var ref = firebase.database().ref(path);
         ref.once("value")
             .then(function(snapshot){
